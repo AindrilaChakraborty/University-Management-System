@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Academic DBMS Manager</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📚 Academic Data Manager (DBMS)</h1>
+
+    <div class="form-section">
+      <select id="dataType">
+        <option value="Student">Student</option>
+        <option value="Course">Course</option>
+        <option value="Instructor">Instructor</option>
+      </select>
+      <input type="text" id="nameInput" placeholder="Enter Name or Title" />
+      <input type="text" id="detailsInput" placeholder="Enter Details" />
+      <button onclick="app.addEntry()">Add Record</button>
+    </div>
+
+    <div id="dataList" class="grid-list"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
